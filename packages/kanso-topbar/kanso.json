@@ -1,0 +1,14 @@
+{
+    "name": "kanso-topbar",
+    "description": "Provides resources for a standard Kanso top bar",
+    "version": "0.0.1",
+    "modules": ["kanso-topbar.js"],
+    "attachments": ["kanso-topbar"],
+    "dependencies": {
+        "modules": null,
+        "attachments": null,
+        "jquery": null,
+        "session": null,
+        "db": null
+    }
+}

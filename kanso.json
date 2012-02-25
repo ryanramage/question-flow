@@ -1,0 +1,49 @@
+{
+    "name": "topicflow",
+    "version": "0.0.1",
+    "description": "A topic management tool.",
+    "long_description": "TopicFlow is a great way for manage topics for groups of people. It is modelled after stackoverflow",
+    "url": "https://github.com/ryanramage/topicflow",
+    "categories": ["forum"],
+    "attachments": ["static", "index.html"],
+    "icons": {
+        "16": "static/icons/wiki_icon_16.png",
+        "48": "static/icons/wiki_icon_48.png",
+        "96": "static/icons/wiki_icon_96.png",
+        "128": "static/icons/wiki_icon_128.png"
+    },
+    "promo_images": {
+        "small": "static/images/promo_small.png"
+    },
+    "screenshots": [
+        "static/images/screenshot1.png",
+        "static/images/screenshot2.png",
+        "static/images/screenshot3.png"
+    ],
+
+    "modules": "lib",
+    "load": "lib/app",
+    "less": {
+        "compress": true,
+        "compile": ["static/css/main.less"],
+        "remove_from_attachments": true
+    },
+    "handlebars": {
+        "all_partials": true,
+        "templates": "templates"
+    },
+    "dependencies": {
+        "attachments": null,
+        "modules": null,
+        "less-precompiler": null,
+        "bootstrap": null,
+        "properties": null,
+        "underscore": null,
+        "handlebars": null,
+        "handlebars-helpers": "0.0.2",
+        "kanso-topbar": null,
+        "git-info" : null,
+        "db" : null,
+        "sanitize" : null
+    }
+}

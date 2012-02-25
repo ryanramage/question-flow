@@ -1,0 +1,367 @@
+#kanso-topbar input:focus,
+#kanso-topbar textarea:focus,
+#kanso-topbar isindex:focus,
+#kanso-topbar keygen:focus,
+#kanso-topbar select:focus {
+    outline-offset: -2px;
+}
+
+#kanso-topbar button,
+#kanso-topbar input,
+#kanso-topbar select,
+#kanso-topbar textarea {
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+}
+
+#kanso-topbar label,
+#kanso-topbar input,
+#kanso-topbar select,
+#kanso-topbar textarea {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: normal;
+}
+
+#kanso-topbar input,
+#kanso-topbar textarea,
+#kanso-topbar select,
+#kanso-topbar .uneditable-input {
+    display: inline-block;
+    width: 210px;
+    height: 18px;
+    padding: 4px;
+    font-size: 13px;
+    line-height: 18px;
+    color: gray;
+    border: 1px solid #CCC;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#kanso-topbar input,
+#kanso-topbar textarea {
+    -webkit-transition: border linear 0.2s,box-shadow linear 0.2s;
+    -moz-transition: border linear 0.2s,box-shadow linear 0.2s;
+    -ms-transition: border linear 0.2s,box-shadow linear 0.2s;
+    -o-transition: border linear 0.2s,box-shadow linear 0.2s;
+    transition: border linear 0.2s,box-shadow linear 0.2s;
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#kanso-topbar input:focus,
+#kanso-topbar textarea:focus {
+    outline: 0;
+    border-color: rgba(82, 168, 236, 0.8);
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1),0 0 8px rgba(82, 168, 236, 0.6);
+    -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1),0 0 8px rgba(82, 168, 236, 0.6);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1),0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+#kanso-topbar label {
+    padding-top: 6px;
+    font-size: 13px;
+    line-height: 18px;
+    float: left;
+    width: 130px;
+    text-align: right;
+    color: #404040;
+}
+
+
+#kanso-topbar button,
+#kanso-topbar input[type="button"],
+#kanso-topbar input[type="reset"],
+#kanso-topbar input[type="submit"] {
+    cursor: pointer;
+    -webkit-appearance: button;
+}
+
+#kanso-topbar input[type="button"],
+#kanso-topbar input[type="reset"],
+#kanso-topbar input[type="submit"] {
+    width: auto;
+    height: auto;
+}
+
+
+
+
+#kanso-topbar {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+    color: #404040;
+    height: 32px;
+    width: 100%;
+    background-color: #1D1D1D;
+    position: relative;
+}
+
+#kanso-topbar .kanso-topbar-home-icon {
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 13px;
+    height: 20px;
+    width: 0px;
+    padding-left: 20px;
+    overflow: hidden;
+    background-image: url(./dashboard_icon.png);
+    background-repeat: no-repeat;
+}
+
+#kanso-topbar a {
+    text-decoration: none;
+    font-weight: normal;
+}
+
+#kanso-topbar .appname {
+    font-weight: bold;
+    color: white;
+    margin: 0 50px;
+    border-left: 1px solid #666;
+    padding: 7px 10px;
+    background-color: #1D1D1D;
+    float: left;
+}
+
+#kanso-topbar>ul {
+    margin: 0;
+    padding: 0;
+    height: 32px;
+    overflow: hidden;
+    list-style-type: none;
+    float: left;
+}
+
+#kanso-topbar>ul>li {
+    display: block;
+    float: left;
+}
+
+#kanso-topbar>ul>li>a {
+    display: block;
+    border-top: 2px solid #1D1D1D;
+    background-color: #1D1D1D;
+    padding: 5px 10px 10px 10px;
+    color: #BFBFBF;
+}
+
+#kanso-topbar>ul>li>a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+#kanso-topbar>ul>li.active>a {
+    border-top: 2px solid #bd0000;
+    background-color: black;
+    color: white;
+}
+
+#kanso-topbar #kanso-topbar-session {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+    color: white;
+}
+
+#kanso-topbar #kanso-topbar-session ul {
+    border: none;
+    background: #2D2D2D;
+    height: 32px;
+    overflow: hidden;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    float: right;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#kanso-topbar #kanso-topbar-session ul li {
+    display: block;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+#kanso-topbar #kanso-topbar-session ul li a {
+    display: block;
+    border-top: 2px solid #1d1d1d;
+    background-color: #1d1d1d;
+    padding: 5px 10px 10px 10px;
+    border-left: 1px solid #404040;
+    color: #bfbfbf;
+}
+
+#kanso-topbar #kanso-topbar-session ul li a:hover {
+    background-color: #2b2b2b;
+    color: white;
+    text-decoration: none;
+}
+
+
+#kanso-topbar #kanso-topbar-login-dropdown {
+    z-index: 9999;
+    position: absolute;
+    right: 0;
+    top: 32px;
+    background-color: #2b2b2b;
+    padding: 14px;
+    width: 300px;
+}
+
+#kanso-topbar #kanso-topbar-login-dropdown form {
+    margin: 0;
+}
+
+#kanso-topbar #kanso-topbar-login-dropdown .kanso-topbar-field {
+    padding: 0.5em 0;
+}
+
+#kanso-topbar #kanso-topbar-login-dropdown .kanso-topbar-actions {
+    clear: both;
+    background: #2D2D2D;
+    margin: 10px 0 0 0;
+}
+
+#kanso-topbar #kanso-topbar-login-dropdown label {
+    width: 70px;
+    display: inline-block;
+    color: #eee;
+    padding-right: 10px;
+}
+#kanso-topbar #kanso-topbar-login-dropdown .kanso-topbar-field input {
+    background-color: #666;
+    border: 1px solid #999;
+    color: #eee;
+}
+
+#kanso-topbar #kanso-topbar-login-login,
+#kanso-topbar #kanso-topbar-login-cancel {
+    cursor: pointer;
+    display: inline-block;
+    background-color: #E6E6E6;
+    background-repeat: no-repeat;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), color-stop(25%, white), to(#E6E6E6));
+    background-image: -webkit-linear-gradient(white, white 25%, #E6E6E6);
+    background-image: -moz-linear-gradient(top, white, white 25%, #E6E6E6);
+    background-image: -ms-linear-gradient(white, white 25%, #E6E6E6);
+    background-image: -o-linear-gradient(white, white 25%, #E6E6E6);
+    background-image: linear-gradient(white, white 25%, #E6E6E6);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+    padding: 5px 14px 6px;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    color: #333;
+    font-size: 13px;
+    line-height: normal;
+    border: 1px solid #CCC;
+    border-bottom-color: #BBB;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2),0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2),0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2),0 1px 2px rgba(0, 0, 0, 0.05);
+    -webkit-transition: 0.1s linear all;
+    -moz-transition: 0.1s linear all;
+    -ms-transition: 0.1s linear all;
+    -o-transition: 0.1s linear all;
+    transition: 0.1s linear all;
+}
+#kanso-topbar #kanso-topbar-login-login:hover,
+#kanso-topbar #kanso-topbar-login-cancel:hover {
+    background-position: 0 -15px;
+    color: #333;
+    text-decoration: none;
+}
+#kanso-topbar #kanso-topbar-login-login:active,
+#kanso-topbar #kanso-topbar-login-cancel:active {
+    -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25),0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25),0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25),0 1px 2px rgba(0, 0, 0, 0.05);
+}
+#kanso-topbar #kanso-topbar-login-login,
+#kanso-topbar #kanso-topbar-login-cancel,
+#kanso-topbar #kanso-topbar-login-login:hover,
+#kanso-topbar #kanso-topbar-login-cancel:hover {
+    color: white;
+}
+#kanso-topbar #kanso-topbar-login-login {
+    background-color: #385F83;
+    background-repeat: repeat-x;
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#699AC8), to(#385F83));
+    background-image: -moz-linear-gradient(top, #699AC8, #385F83);
+    background-image: -ms-linear-gradient(top, #699AC8, #385F83);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #699AC8), color-stop(100%, #385F83));
+    background-image: -webkit-linear-gradient(top, #699AC8, #385F83);
+    background-image: -o-linear-gradient(top, #699AC8, #385F83);
+    background-image: linear-gradient(top, #699AC8, #385F83);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#699ac8', endColorstr='#385f83', GradientType=0);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    border-color: #385F83 #385F83 #21384D;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+
+    margin-right: 4px;
+}
+#kanso-topbar #kanso-topbar-login-cancel {
+    background-color: #404040;
+    background-repeat: repeat-x;
+    background-image: -khtml-gradient(linear, left top, left bottom, from(gray), to(#404040));
+    background-image: -moz-linear-gradient(top, gray, #404040);
+    background-image: -ms-linear-gradient(top, gray, #404040);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, gray), color-stop(100%, #404040));
+    background-image: -webkit-linear-gradient(top, gray, #404040);
+    background-image: -o-linear-gradient(top, gray, #404040);
+    background-image: linear-gradient(top, gray, #404040);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#808080', endColorstr='#404040', GradientType=0);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    border-color: #404040 #404040 #1A1A1A;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+
+#kanso-topbar #kanso-topbar-login-dropdown .kanso-topbar-general-errors {
+    color: #DE5858;
+}
+#kanso-topbar #kanso-topbar-login-dropdown .kanso-topbar-validation-error label {
+    color: #DE5858;
+}
+#kanso-topbar #kanso-topbar-login-dropdown .kanso-topbar-validation-error input {
+    border: 1px solid #DE5858;
+}
+
+#kanso-topbar #kanso-topbar-login-dropdown .kanso-topbar-errors {
+    margin: 5px 14px 5px 80px;
+    width: 206px;
+}
+
+#kanso-topbar .kanso-topbar-actions {
+    border: none;
+    background: #2D2D2D;
+    height: 32px;
+    overflow: hidden;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    float: right;
+}
+
+#kanso-topbar-session {
+    color: white;
+}
+
+#kanso-topbar-session .username {
+    float: left;
+    background-color: #1D1D1D;
+    padding: 7px 10px;
+    color: white;
+}
