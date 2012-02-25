@@ -1,32 +1,36 @@
-<div class="row topic agenda">
-    <div class="span2">
-        <div class="votes">
-            <div class="mini-counts">0</div>
-            <div>Votes</div>
+<div class="row topic">
+    <div class="row">
+        <div class="span1">
+            <div class="votes">
+                <div class="mini-counts">0</div>
+                <div>Votes</div>
+            </div>
+            <div class="answers">
+                <div class="mini-counts">5</div>
+                <div>Answers</div>
+            </div>
+            <div class="views">
+                <span class="count">0</span> Views
+            </div>
         </div>
-        <div class="views">
-            <div class="mini-counts">0</div>
-            <div>Views</div>
-        </div>
-    </div>
-    <div class="span8 ">
-        <div class="title">
-            <a href="#/topic/2123131312321/which-project-will-we-use-for-project-x">Which library will we use for Project x?</a>
-        </div>
-        <p class="small">
+        <div class="span7">
+            <div class="title">
+                <a href="#/topics/{{_id}}/{{slug}}">{{title}}</a>
+            </div>
+            <p class="small text">
+                {{text}}
+            </p>
+            <div class="who">
+                Asked <span class="asked-ago">{{timestamp_formatted}}</span>
+                <div class="details">
+                    <a href="#/profiles/{{user}}">{{user}}</a>
+                    <img src="{{gravatar_url}}" alt="avatar" />
 
-        </p>
-        <div class="tags">
-            <span class="label notice">javascript</span> <span class="label notice">libraries</span> <span class="label">project-x</span> <span class="label">working-group</span>
-        </div>
-    </div>
-    <div class="span2">
-        <div class="accepted">
-            &#10003;
-        </div>
-        <div class="answers">
-            <div class="mini-counts">5</div>
-            <div>Answers</div>
+                </div>
+            </div>
+            <div class="tags">
+                <span class="label notice">javascript</span> <span class="label notice">libraries</span> <span class="label">project-x</span> <span class="label">working-group</span>
+            </div>
         </div>
     </div>
 </div>

@@ -44,6 +44,9 @@
         "kanso-topbar": null,
         "git-info" : null,
         "db" : null,
-        "sanitize" : null
+        "sanitize" : null,
+        "events" : null,
+        "session" : null,
+        "gravatar" : null
     }
 }
