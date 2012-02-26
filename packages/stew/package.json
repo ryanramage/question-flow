@@ -1,0 +1,20 @@
+{ "name": "stew"
+, "version": "0.1.0"
+, "author": { "name": "Jason Smith" , "email": "jhs@iriscouch.com" }
+, "description": "Easy CouchDB reduce functions"
+, "tags"       : ["couchdb", "mapreduce", "reduce", "kanso"]
+, "homepage": "http://github.com/iriscouch/stew"
+, "repository": { "type": "git"
+                , "url": "git://github.com/iriscouch/stew" }
+
+, "engines": [ "kanso" ]
+, "private": true
+
+, "dependencies"   : {
+                     }
+
+, "devDependencies": { "tap"     : "0.1.3"
+                     , "kanso"   : "0.1.2-npm1"
+                     , "request" : "~2.2.9"
+                     }
+}

@@ -47,6 +47,7 @@
         "sanitize" : null,
         "events" : null,
         "session" : null,
-        "gravatar" : null
+        "gravatar" : null,
+        "stew" : null
     }
 }

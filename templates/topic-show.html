@@ -1,0 +1,58 @@
+<div class="row topic-show">
+    <h1>
+        <a href="#/topics/{{_id}}/{{slug}}">{{title}}</a>
+    </h1>
+</div>
+<div class="row topic-show">
+    <div class="span9">
+        <div class="row">
+            <div class="span1">
+                <div class="upvoted">&#9650;</div>
+                <div class="question_total"></div>
+                <div class="downvote">&#9660;</div>
+                <div class="favorite">&#9734;</div>
+            </div>
+            <div class="span8">
+                <div class="row">
+                    <p class="small text">
+                        {{{text_showdown}}}
+                    </p>
+                    <div class="tags">
+                        <span class="label notice">javascript</span> <span class="label notice">libraries</span> <span class="label">project-x</span> <span class="label">working-group</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span4">
+                        link | edit | retag | flag
+                    </div>
+                    <div class="span2">
+
+                    </div>
+                    <div class="span2">
+                        Asked <span class="asked-ago">{{timestamp_date_formatted}}</span>
+                        <div class="details">
+                            <a href="#/profiles/{{user}}">{{user}}</a>
+                            <img src="{{gravatar_url}}" alt="avatar" />
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="span3">
+        <h5>
+            tagged
+        </h5>
+        <ul class="related unstyled">
+            {{#each tag}}
+                {{name}}
+            {{/each}}
+        </ul>
+        <div class="meta">
+            <span class="label">Asked</span><span class="value">{{timestamp_formatted}}</span>
+            <span class="label">Viewed</span><span class="value">{{views}}</span>
+            <span class="label">Active</span><span class="value">{{active_formatted}}</span>
+        </div>
+    </div>
+</div>
