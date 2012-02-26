@@ -4,36 +4,37 @@
     </h1>
 </div>
 <div class="row topic-show">
-    <div class="span9">
+    <div class="span9 main-section">
         <div class="row">
-            <div class="span1">
-                <div class="upvoted">&#9650;</div>
-                <div class="question_total"></div>
-                <div class="downvote">&#9660;</div>
-                <div class="favorite">&#9734;</div>
+            <div class="span1 side-menu">
+                <div class="upvote help" title="This question shows research effort; it is useful and clear (click again to undo)" >&#9650;</div>
+                <div class="question_total">0</div>
+                <div class="downvote help" title="This question does not show any research effort; it is unclear or not useful (click again to undo)" >&#9660;</div>
+                <div class="help favorite" title="This is a favorite question (click again to undo)" >&#9734;</div>
             </div>
             <div class="span8">
                 <div class="row">
-                    <p class="small text">
+                    <div class="text">
                         {{{text_showdown}}}
-                    </p>
+                    </div>
                     <div class="tags">
                         <span class="label notice">javascript</span> <span class="label notice">libraries</span> <span class="label">project-x</span> <span class="label">working-group</span>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="span4">
+                    <div class="span3">
                         link | edit | retag | flag
                     </div>
-                    <div class="span2">
+                    <div class="span5">
+                        <div class="owner">
+                            <div class="asked">
+                                Asked <span class="asked-ago">{{timestamp_date_formatted}}</span>
+                            </div>
+                            <div class="details">
+                                <a href="#/profiles/{{user}}">{{user}}</a>
+                                <img src="{{gravatar_url}}" alt="avatar" />
 
-                    </div>
-                    <div class="span2">
-                        Asked <span class="asked-ago">{{timestamp_date_formatted}}</span>
-                        <div class="details">
-                            <a href="#/profiles/{{user}}">{{user}}</a>
-                            <img src="{{gravatar_url}}" alt="avatar" />
-
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -50,9 +51,15 @@
             {{/each}}
         </ul>
         <div class="meta">
-            <span class="label">Asked</span><span class="value">{{timestamp_formatted}}</span>
-            <span class="label">Viewed</span><span class="value">{{views}}</span>
-            <span class="label">Active</span><span class="value">{{active_formatted}}</span>
+            <div>
+                <span class="lbl">Asked</span><span class="value">{{timestamp_formatted}}</span>
+            </div>
+            <div>
+                <span class="lbl">Viewed</span><span class="value">{{views}}</span>
+            </div>
+            <div>
+                <span class="lbl">Active</span><span class="value">{{active_formatted}}</span>
+            </div>
         </div>
     </div>
 </div>

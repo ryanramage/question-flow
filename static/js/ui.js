@@ -1,6 +1,7 @@
 var topbar = require('kanso-topbar');
 var topics = require('lib/ui/topics');
 var session = require('session');
+var $ = require('jquery');
 
 topbar.init();
 

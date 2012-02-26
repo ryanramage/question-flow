@@ -79,7 +79,7 @@ function define_easy_reducer(key_names) {
 
       result[new_key] = func.call(result, value)
     })
-
+    log(result);
     return result
   }
 
