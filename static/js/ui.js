@@ -23,7 +23,6 @@ topics.on('login-show', function() {
 })
 
 session.on('change', function (userCtx) {
-    console.log(userCtx);
     var req = { userCtx : userCtx };
     if (isUser(req)) {
         $('.loggedin').show();
