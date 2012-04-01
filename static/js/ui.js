@@ -1,9 +1,8 @@
-var topbar = require('kanso-topbar');
 var topics = require('lib/ui/topics');
 var session = require('session');
 var $ = require('jquery');
 
-topbar.init();
+
 
 var routes = {
   '/topics'   : topics.show,
@@ -19,7 +18,7 @@ topics.on('route', function(route) {
 })
 
 topics.on('login-show', function() {
-    topbar.showDropDown();
+    //topbar.showDropDown();
 })
 
 session.on('change', function (userCtx) {

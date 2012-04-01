@@ -41,13 +41,13 @@
         "underscore": null,
         "handlebars": null,
         "handlebars-helpers": "0.0.2",
-        "kanso-topbar": null,
         "git-info" : null,
         "db" : null,
         "sanitize" : null,
         "events" : null,
         "session" : null,
         "gravatar" : null,
-        "stew" : null
+        "stew" : null,
+        "jquery" : null
     }
 }

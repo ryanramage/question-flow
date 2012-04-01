@@ -18,17 +18,22 @@
                         {{{text_showdown}}}
                     </div>
                     <div class="tags">
+                        {{#if false}}
                         <span class="label notice">javascript</span> <span class="label notice">libraries</span> <span class="label">project-x</span> <span class="label">working-group</span>
+                        {{/if}}
                     </div>
                 </div>
                 <div class="row">
                     <div class="span3">
+                        &nbsp;
+                        {{#if false}}
                         link | edit | retag | flag
+                        {{/if}}
                     </div>
                     <div class="span5">
                         <div class="owner">
                             <div class="asked">
-                                Asked <span class="asked-ago">{{timestamp_date_formatted}}</span>
+                                Asked &nbsp;<span class="asked-ago">{{timestamp_date_formatted}}</span>
                             </div>
                             <div class="details">
                                 <a href="#/profiles/{{user}}">{{user}}</a>
@@ -62,13 +67,13 @@
         </ul>
         <div class="meta">
             <div>
-                <span class="lbl">Asked</span><span class="value">{{timestamp_formatted}}</span>
+                <span class="lbl">Asked</span> <span class="value">{{timestamp_formatted}}</span>
             </div>
             <div>
-                <span class="lbl">Viewed</span><span class="value">{{views}}</span>
+                <span class="lbl">Viewed</span> <span class="value">{{views}} times</span>
             </div>
             <div>
-                <span class="lbl">Active</span><span class="value">{{active_formatted}}</span>
+                <span class="lbl">Active</span> <span class="value">{{active_formatted}}</span>
             </div>
         </div>
     </div>
