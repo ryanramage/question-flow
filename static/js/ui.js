@@ -2,34 +2,27 @@ var topics = require('lib/ui/topics');
 var session = require('session');
 var $ = require('jquery');
 
+$(function() {
+    var routes = {
+
+      '/topics/new' : topics.new,
+      '/topics/:id/:slug' : topics.single,
+        '/topics'   : topics.show
+    };
+
+    var router = Router(routes);
+    router.init('/topics');
+
+    topics.on('route', function(route) {
+        router.setRoute(route);
+    })
+
+    topics.on('login-show', function() {
+        //topbar.showDropDown();
+    })
 
 
-var routes = {
-  '/topics'   : topics.show,
-  '/topics/new' : topics.new,
-  '/topics/:id/:slug' : topics.single
-};
 
-var router = Router(routes);
-router.init('/topics');
-
-topics.on('route', function(route) {
-    router.setRoute(route);
-})
-
-topics.on('login-show', function() {
-    //topbar.showDropDown();
-})
-
-session.on('change', function (userCtx) {
-    var req = { userCtx : userCtx };
-    if (isUser(req)) {
-        $('.loggedin').show();
-        $('.loggedout').hide();
-    } else {
-        $('.loggedin').hide();
-        $('.loggedout').show();
-    }
 });
 
 

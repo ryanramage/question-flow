@@ -1,10 +1,34 @@
-<div class="row answer">
+<div class="row answer {{_id}}">
     <div class="span1 side-menu">
-        <div class="upvote help" title="This question shows research effort; it is useful and clear (click again to undo)" >&#9650;</div>
-        <div class="question_total" data-upvotes="0" data-downvotes="0">..</div>
-        <div class="downvote help" title="This question does not show any research effort; it is unclear or not useful (click again to undo)" >&#9660;</div>
+        <div class="upvote help" title="This answer is useful (click again to undo)" >&#9650;</div>
+        <div class="question_total" data-upvotes="0" data-downvotes="0">0</div>
+        <div class="downvote help" title="This answer is not useful (click again to undo)" >&#9660;</div>
     </div>
     <div class="span8">
-        {{{text_showdown}}}
+        <div class="row">
+            <div class="text">
+                {{{text_showdown}}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="span3">
+                &nbsp;
+                {{#if false}}
+                link | edit | retag | flag
+                {{/if}}
+            </div>
+            <div class="span5">
+                <div class="owner answer-owner">
+                    <div class="asked">
+                        answered &nbsp;<span class="asked-ago">{{timestamp_date_formatted}}</span>
+                    </div>
+                    <div class="details">
+                        <a href="#/profiles/{{user}}">{{user}}</a>
+                        <img src="{{gravatar_url}}" alt="avatar" />
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
