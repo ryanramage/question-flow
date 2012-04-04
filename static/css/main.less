@@ -148,6 +148,11 @@ div.container[role="main"] {
     margin-top: 30px;
 }
 
+.answers-section h1 {
+    color: #999;
+    font-size: 145%;
+}
+
 .topic-show .upvote, .topic-show .downvote {
     font-size: 25px;
     cursor: pointer;
@@ -183,6 +188,7 @@ div.container[role="main"] {
 .topic-show .text {
     zoom: 1.15;
     padding-right: 20px;
+    min-height: 40px;
 }
 
 .topic-show .asked {
@@ -224,4 +230,42 @@ div.container[role="main"] {
 .topic-show .your-answer textarea {
     width: 690px;
     min-height: 208px;
+}
+
+a.comment-link {
+    padding: 0px 3px 2px 3px;
+    color: #888;
+    cursor:pointer;
+    text-decoration: none;
+}
+
+a.comment-link:hover {
+    color: #EFEFEF;
+    background-color: #888;
+}
+
+.topic-comment-section form textarea {
+    width: 100%;
+    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    border: 1px solid #999;
+    font-size: 90%;
+}
+
+.topic-comments {
+
+    margin-top: 10px;
+    padding-bottom: 10px;
+    line-height: 135%;
+    color: #444;
+}
+
+.topic-comments.has_one {
+    border-top: dotted 1px #AAA;
+}
+
+
+.comment {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: dotted 1px #DDD;
 }
