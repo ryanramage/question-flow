@@ -121,10 +121,20 @@ div.container[role="main"] {
 .who {
     float: right;
     width: 160px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.who .details {
+    line-height: 16px;
+}
+.who .details a {
+    font-size: 11px;
 }
 
 .who .details img {
     float: left;
+    margin-right: 3px;
 }
 
 
@@ -268,4 +278,11 @@ a.comment-link:hover {
     padding-top: 5px;
     padding-bottom: 5px;
     border-bottom: dotted 1px #DDD;
+}
+
+.reputation {
+    font-weight: bold;
+    color: #444;
+    font-size: 120%;
+    margin-right: 2px;
 }

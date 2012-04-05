@@ -23,8 +23,10 @@
             <div class="who">
                 Asked <span class="asked-ago">{{timestamp_formatted}}</span>
                 <div class="details">
-                    <a href="#/profiles/{{user}}">{{user}}</a>
                     <img src="{{gravatar_url}}" alt="avatar" />
+                    <a href="#/profiles/{{user}}">{{user}}</a>
+                    <div class="reputation {{user_hash}}">0</div>
+
 
                 </div>
             </div>
