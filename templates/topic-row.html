@@ -20,6 +20,11 @@
             <p class="small text">
                 {{short_text}}
             </p>
+            <div class="tags">
+                {{#each tags}}
+                <a href="#/tagged/{{this}}" class="tag-link">{{this}}</a>
+                {{/each}}
+            </div>
             <div class="who">
                 Asked <span class="asked-ago">{{timestamp_formatted}}</span>
                 <div class="details">

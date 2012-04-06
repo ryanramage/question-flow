@@ -18,9 +18,9 @@
                         {{{text_showdown}}}
                     </div>
                     <div class="tags">
-                        {{#if false}}
-                        <span class="label notice">javascript</span> <span class="label notice">libraries</span> <span class="label">project-x</span> <span class="label">working-group</span>
-                        {{/if}}
+                        {{#each tags}}
+                        <a href="#/tagged/{{this}}" class="tag-link">{{this}}</a>
+                        {{/each}}
                     </div>
                 </div>
                 <div class="row">
