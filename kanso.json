@@ -1,9 +1,9 @@
 {
-    "name": "topicflow",
+    "name": "answers",
     "version": "0.0.1",
-    "description": "A topic management tool.",
-    "long_description": "TopicFlow is a great way for manage topics for groups of people. It is modelled after stackoverflow",
-    "url": "https://github.com/ryanramage/topicflow",
+    "description": "A community driven question and answer forum.",
+    "long_description": "Answers is a collaboratively edited question and answer app. It is modelled after stackoverflow.\n\nUsers can post questions, answers and comments. ",
+    "url": "https://github.com/ryanramage/question-flow",
     "categories": ["forum"],
     "attachments": ["static", "index.html"],
     "icons": {
@@ -17,8 +17,7 @@
     },
     "screenshots": [
         "static/images/screenshot1.png",
-        "static/images/screenshot2.png",
-        "static/images/screenshot3.png"
+        "static/images/screenshot2.png"
     ],
 
     "modules": "lib",
